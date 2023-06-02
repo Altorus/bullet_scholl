@@ -10,8 +10,6 @@ from core.views import *
 
 app_name = 'core'
 
-
-
 urlpatterns = [
     re_path(r'^$', index, name='index'),
     re_path(r'^about/$', about, name='about'),
