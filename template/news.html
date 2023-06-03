@@ -10,7 +10,7 @@
                         <div class="item-n">
                             <div class="title">{{ news.name }}</div>
                             <div class="date">{{ news.dt_create | date:"d.m.Y" }}</div>
-                            <div class="text">{{ news.content|safe|truncatechars:80 }}</div>
+                            <div class="text">{{ news.content|safe|truncatechars:200 }}</div>
                             <a href="{% url 'core:news-item' news.alias %}" class="more">Подробнее</a>
                         </div>
                     {% endfor %}
