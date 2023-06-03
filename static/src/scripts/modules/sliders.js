@@ -7,7 +7,7 @@ export function sliders() {
         slidesPerView: 3,
         spaceBetween: 20,
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         },
         breakpoints: {
             // when window width is >= 320px
