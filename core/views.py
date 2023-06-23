@@ -104,7 +104,7 @@ def create_order(names: list, data: dict, ):
         obj_info[name] = data.get(name, '')
         message += f'{Order._meta.get_field(name).verbose_name}: {data.get(name, "")}\n'
     requests.get(
-        f'https://api.telegram.org/bot6286171380:AAF1gCE9uUTzi9SSTYmHKl7P0xphvcSgrrY/sendMessage?chat_id=-812752353&text={message}')
+        f'https://api.telegram.org/bot6286171380:AAF1gCE9uUTzi9SSTYmHKl7P0xphvcSgrrY/sendMessage?chat_id=-1001946665398&text={message}')
     Order.objects.create(**obj_info)
     return True
 
